@@ -47,17 +47,17 @@
     <div class="stats-grid">
       <div class="stat-box animate-on-scroll" style="--delay: 100ms">
         <Users size={32} color="var(--color-primary-dark)" class="stat-icon" />
-        <div class="stat-number">50k+</div>
+        <div class="stat-number">6,5k+</div>
         <div class="stat-label">Návštěvníků</div>
       </div>
       <div class="stat-box animate-on-scroll" style="--delay: 200ms">
         <Calendar size={32} color="var(--color-primary-dark)" class="stat-icon" />
-        <div class="stat-number">250+</div>
+        <div class="stat-number">180+</div>
         <div class="stat-label">Odehraných eventů</div>
       </div>
       <div class="stat-box animate-on-scroll" style="--delay: 300ms">
         <Star size={32} color="var(--color-primary-dark)" class="stat-icon" />
-        <div class="stat-number">100%</div>
+        <div class="stat-number">99,9%</div>
         <div class="stat-label">Spokojenost klubů</div>
       </div>
     </div>
@@ -155,7 +155,7 @@
   /* --- BOTTOM CTA --- */
   .bottom-cta-section { padding: 100px 20px; background: white; border-top: 1px solid #e5e7eb; }
   .bottom-cta-section h2 { font-size: 3rem; font-weight: 900; margin-bottom: 15px; text-transform: uppercase; }
-  .bottom-cta-section p { font-size: 1.2rem; color: #6b7280; }
+  .bottom-cta-section p { font-size: 1.2rem; color: #6b7280;}
 
   /* --- RESPONSIVE --- */
   @media (max-width: 900px) { 

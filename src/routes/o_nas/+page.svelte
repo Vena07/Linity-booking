@@ -25,11 +25,11 @@
         
         <div class="stats-mini">
           <div class="stat-mini">
-            <strong>50k+</strong>
+            <strong>6,5k+</strong>
             <span>Bavících se lidí</span>
           </div>
           <div class="stat-mini">
-            <strong>250+</strong>
+            <strong>180+</strong>
             <span>Odehraných eventů</span>
           </div>
         </div>
@@ -39,7 +39,7 @@
         <div class="story-card">
           <Activity size={32} color="var(--color-primary-dark)" style="margin-bottom: 20px;" />
           <p class="lead-text">Vznikli jsme z jednoduché potřeby: zvednout úroveň klubové zábavy v ČR.</p>
-          <p>Už nás nebavilo koukat na promotéry, kteří se trápí s výpadky DJs, špatnou technikou a nulovým promelem. Vzali jsme to do vlastních rukou.</p>
+          <p>Už nás nebavilo koukat na promotéry, kteří se trápí s výpadky DJs, špatnou technikou a nulovým promem. Vzali jsme to do vlastních rukou.</p>
           <p>Dnes máme pod sebou desítky talentů a špičkovou techniku. Ať už děláme malý páteční warmup, nebo vyprodanou halu, jedeme na 100 %.</p>
         </div>
       </div>

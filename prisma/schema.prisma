@@ -1,0 +1,64 @@
+// prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// --- RENTAL MODELY ---
+model Category {
+  id        String    @id @default(cuid())
+  name      String
+  slug      String    @unique
+  products  Product[]
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String
+  pricePerDay Int
+  imageUrl    String
+  categoryId  String
+  category    Category @relation(fields: [categoryId], references: [id])
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// --- AGENCY MODEL (Maturáky atd.) ---
+model Event {
+  id          String   @id @default(uuid())
+  createdAt   DateTime @default(now())
+  adminToken  String   @unique
+  status      String   @default("PENDING")
+  eventName   String?
+  name        String
+  email       String
+  phone       String
+  date        String
+  city        String
+  venue       String
+  className   String?
+  dj          String?
+  note        String?
+  services    String
+  price       String
+}
+
+// --- NOVÝ BOOKING MODEL ---
+model BookingRequest {
+  id          String   @id @default(cuid())
+  createdAt   DateTime @default(now())
+  status      String   @default("PENDING") // Abys to mohl v Adminu odškrtávat
+  
+  clubDetails String   // Klub / Název podniku a Město
+  name        String   // Jméno promotéra
+  phone       String   
+  email       String   
+  bookingType String   // O co má zájem
+  message     String?  // Doplňující info (volitelné)
+}
