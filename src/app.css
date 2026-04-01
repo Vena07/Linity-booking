@@ -1,0 +1,59 @@
+:root {
+  /* Linity Brand Colors */
+  --color-primary: #4ade80;       /* Glow zelená */
+  --color-primary-dark: #22c55e;
+  --color-black: #000000;         /* ČISTĚ ČERNÁ PRO TEXT */
+  --color-bg: #f8fafc;
+  
+  --header-height: 80px;
+  --max-width: 1200px;
+  --font-main: 'Roboto', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: #1a1a1a; 
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a { text-decoration: none; color: inherit; }
+* { box-sizing: border-box; }
+h1, h2, h3, p { margin: 0; }
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Globální Linity tlačítko */
+.btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  padding: 16px 32px;
+  border-radius: 12px;
+  font-weight: 900;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 10px 25px -5px rgba(74, 222, 128, 0.4);
+}
+
+.btn-primary:hover:not(:disabled) {
+  transform: translateY(-3px);
+  background-color: var(--color-primary-dark);
+  box-shadow: 0 15px 30px -5px rgba(74, 222, 128, 0.6);
+  color: white;
+}
+
+.highlight { color: var(--color-primary-dark); }
+.text-center { text-align: center; }
