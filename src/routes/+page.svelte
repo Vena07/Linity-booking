@@ -119,7 +119,7 @@
 
   /* --- HERO SEKCE --- */
   .hero-section { position: relative; padding: 190px 20px 230px; text-align: center; min-height: 90vh; display: flex; align-items: center; justify-content: center;}
-  .hero-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/foto2.jpg'); background-position: bottom center; background-size: cover; transform: scale(1.05); z-index: -1; }
+  .hero-section::before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-image: url('/foto2.webp'); background-position: bottom center; background-size: cover; transform: scale(1.05); z-index: -1; }
   .hero-content { position: relative; z-index: 2; max-width: 800px; }
   .hero-img { height: 150px; object-fit: contain; filter: drop-shadow(0 10px 20px rgba(255,255,255,0.3)); margin-bottom: 20px; }
   .badge { display: inline-block; background: #f0fdf4; color: var(--color-primary-dark); padding: 8px 20px; border-radius: 50px; font-weight: 800; font-size: 0.9rem; border: 1px solid rgba(74, 222, 128, 0.4); text-transform: uppercase; margin-bottom: 20px; }

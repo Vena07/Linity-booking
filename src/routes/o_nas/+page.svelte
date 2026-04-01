@@ -3,7 +3,7 @@
   import { MapPin, ArrowRight, Activity } from 'lucide-svelte';
 
   const clubs = ['Fenix Music Club', 'Bílej Medvěd', 'Watt Music Club', 'Urbex club', 'Mko Music Club', 'Summer City Festival', 'Bolevák Festival'];
-  const galleryImages = ['/foto1.jpg', '/foto3.jpg', '/foto4.jpg'];
+  const galleryImages = ['/foto1.webp', '/foto3.webp', '/foto4.webp'];
 
   onMount(() => {
     const observer = new IntersectionObserver((entries) => {
